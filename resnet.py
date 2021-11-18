@@ -54,7 +54,6 @@ class res_block_3layers(nn.Module):
         self.stride = stride
         
     def forward(self, x):
-        
         identity_mapping = x
         output = self.conv1(x)
         output = self.bn1(output)
